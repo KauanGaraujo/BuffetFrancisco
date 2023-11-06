@@ -80,7 +80,7 @@ namespace AppBuffetFrancisco.View
 
         private void button8_Click(object sender, EventArgs e)
         {
-            int codigo = Convert.ToInt32(textBox1.Text);
+            int codigo = Convert.ToInt16(textBox1.Text);
             int qtd = ((int)numericUpDown1.Value);
 
 
@@ -95,7 +95,7 @@ namespace AppBuffetFrancisco.View
 
 
 
-            lbl_valortotal.Text = totalfinal.ToString();
+            lbl_valortotal.Text = "R$" + totalfinal.ToString();
 
 
 
@@ -107,7 +107,7 @@ namespace AppBuffetFrancisco.View
 
         private void lbl_valortotal_Click(object sender, EventArgs e)
         {
-
+             
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -117,11 +117,11 @@ namespace AppBuffetFrancisco.View
             numericUpDown1.Value = 0;
             dataGridView1.Rows.Clear();
         }
-
+        
         private void button2_Click(object sender, EventArgs e)
         {
             
-            TelaFechaVenda tela = new TelaFechaVenda();
+            TelaFechaVenda tela = new TelaFechaVenda(totalfinal);
             tela.Show();
         }
     }
