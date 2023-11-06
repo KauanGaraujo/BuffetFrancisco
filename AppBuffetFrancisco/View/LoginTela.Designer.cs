@@ -67,6 +67,7 @@
             txb_Usuario.Name = "txb_Usuario";
             txb_Usuario.Size = new Size(100, 29);
             txb_Usuario.TabIndex = 3;
+            txb_Usuario.Text = "admin";
             // 
             // txb_Senha
             // 
@@ -75,6 +76,7 @@
             txb_Senha.PasswordChar = '*';
             txb_Senha.Size = new Size(100, 29);
             txb_Senha.TabIndex = 4;
+            txb_Senha.Text = "123";
             txb_Senha.TextChanged += txb_Senha_TextChanged;
             // 
             // btn_Acessar

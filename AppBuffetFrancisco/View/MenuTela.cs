@@ -16,5 +16,33 @@ namespace AppBuffetFrancisco.View
         {
             InitializeComponent();
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void editarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void abToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Instanciand a tela PDVtela
+            
+            //tipo objeto    classe
+            PdvTela PDV = new PdvTela();
+           
+            // Mostra a tela PdvTela
+            // PdvTela é um objeto
+            PDV.Show();
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Pata fechar a aplicação
+            Application.Exit();
+        }
     }
 }
